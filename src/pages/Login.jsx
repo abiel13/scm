@@ -13,11 +13,11 @@ function Login() {
       </div>
       {/* immage for new 3d rendering */}
       <div className="h-2/4 w-2/5  ">
-      <img src={ak} alt="" className="hidden lg:h-full object-cover absolute left-2/5 top-1/2 -translate-y-1/2 translate-x-1/3 self-end lg:block" />  
+      <img src={ak} alt="" className="hidden lg:h-full object-cover absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 self-end lg:block" />  
       </div>
 
 
-      <div className="w-3/4 flex flex-col justify-center items-center md:w-1/2 lg:w-2/5 lg:shadow-lg  lg:absolute lg:left-3/4 lg:-translate-x-3/4 lg:h-3/4 lg:text-center lg:px-5">
+      <div className="w-3/4 flex flex-col justify-center items-center md:w-1/2 lg:w-1/3 lg:shadow-2xl  lg:absolute lg:left-3/4 lg:-translate-x-3/4 lg:h-3/4 lg:text-center lg:px-5">
         <h1 className="hidden lg:text-orange-400 font-extrabold text-3xl lg:block">Login to Your SMP Account</h1>
       <p className="mt-3  w-full font-medium text-xl  text-gray-500  ">here at SMP we give special privelledges to Schools, Parents Teachers and Students</p>
     <select name="" id="" className="mt-3 p-3 font-medium border-none outline-none shadow-md w-full">
