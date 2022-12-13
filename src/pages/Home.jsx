@@ -12,7 +12,7 @@ function Home() {
           <Link to='/login' className="px-5 rounded-md py-1 text-white font-medium bg-red-400">
             login
           </Link>
-          <button className='hidden rounded-md lg:block px-4 py-1 text-white font-medium bg-red-400'>Join Us</button>
+          <Link to='/signup' className='hidden rounded-md lg:block px-4 py-1 text-white font-medium bg-red-400'>Join Us</Link>
         </div>
       </nav>
       <div className="w-screen  px-5 h-3/4 mt-12  flex flex-col justify-center items-center lg:flex-row lg:justify-between">
@@ -21,9 +21,9 @@ function Home() {
         <p className="font-light w-20vh  text-xl text-center px-4 text-white md:text-center  lg:text-gray-500  lg:text-left lg:font-medium lg:self-start  ">
        The Only Software You Need To Manage Your School.
         </p>
-        <button className="px-5 w-1/2 py-3 rounded-md mt-2 font-medium  text-white bg-red-400 hover:bg-red-500 md:w-1/3  lg:hidden">
+        <Link to='/signup' className="px-5 w-1/2 text-center py-3 rounded-md mt-2 font-medium  text-white bg-red-400 hover:bg-red-500 md:w-1/3  lg:hidden">
           Join Us Now
-        </button>
+        </Link>
       </div>
     </div>
 
