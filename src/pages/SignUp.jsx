@@ -5,7 +5,7 @@ import ak from '../images/3d.png'
 
 import React from 'react'
 
-function Login() {
+function SignUp() {
   return (
     <div className="w-screen h-screen flex flex-col overflow-x-hidden items-center p-5 lg:flex-row  "> 
     <div className=" w-full h-full  p-5 flex items-center flex-col lg:flex-row lg:relative ">
@@ -46,4 +46,4 @@ function Login() {
   )
 }
 
-export default Login
+export default SignUp
