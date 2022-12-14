@@ -1,6 +1,7 @@
 import fav from '../images/Nasim.png'
 import ak from '../images/3d.png'
 import React from 'react'
+import Link from 'react-router-dom'
 
 function Login() {
   return (
@@ -30,7 +31,7 @@ function Login() {
 
      <button className="mt-10 bg-orange-400 px-12 py-2 w-full font-medium rounded-md text-white text-xl">Login</button>
 <p>or</p>
-<button className="mt-4 bg-white px-12 py-2 w-3/4 font-medium rounded-md text-black shadow-md text-xl">Sign Up</button>
+<Link to='/signup' className="mt-4 bg-white px-12 py-2 w-3/4 font-medium rounded-md text-black shadow-md text-xl">Sign Up</Link>
       </div>
 
 
