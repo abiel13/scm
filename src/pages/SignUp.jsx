@@ -1,4 +1,4 @@
-import fav from '../images/Wat.jpg'
+import fav from '../images/wat.jpg'
 import ak from '../images/3d.png'
 import React from 'react'
 
