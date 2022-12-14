@@ -1,6 +1,7 @@
 import fav from '../images/wat.jpg'
 import ak from '../images/3d.png'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function SignUp() {
   return (
@@ -9,7 +10,7 @@ function SignUp() {
       <div className="relative w-3/4 h-2/5 rounded-md  md:w-1/2 lg:hidden">
 <img src={fav} alt="" className="rounded-md h-full w-full object-cover" />
 
-<p className="absolute text-center font-medium text-xl text-white w-3/4 left-1/2 -translate-x-1/2 bottom-0 ">Login to your account</p>
+<p className="absolute text-center font-medium text-xl text-white w-3/4 left-1/2 -translate-x-1/2 bottom-0 ">Sign up to your account</p>
       </div>
       {/* immage for new 3d rendering */}
       <div className="h-2/4 w-2/5  ">
@@ -30,7 +31,7 @@ function SignUp() {
 
      <button className="mt-10 bg-orange-400 px-12 py-2 w-full font-medium rounded-md text-white text-xl">Sign Up</button>
 <p>or</p>
-<button className="mt-4 bg-white px-12 py-2 w-3/4 font-medium rounded-md text-black shadow-md text-xl">Login</button>
+<Link to='/login' className="mt-4 bg-white px-12 py-2 w-3/4 font-medium rounded-md text-black shadow-md text-xl">Login</Link>
       </div>
 
 
