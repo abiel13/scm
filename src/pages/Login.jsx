@@ -1,7 +1,7 @@
 import fav from '../images/Nasim.png'
 import ak from '../images/3d.png'
 import React from 'react'
-import Link from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 function Login() {
   return (
