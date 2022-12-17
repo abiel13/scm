@@ -2,7 +2,7 @@ import React from "react";
 import webp from "../images/Rectangle 1.png";
 import logo from "../images/SMP@2x.svg";
 import a from "../images/a.png";
-import elipse from "../Images/Ellipse 1.png";
+import elipse from "../images/Ellipse 1.png";
 
 import { NavLink } from "react-router-dom";
 
