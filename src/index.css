@@ -2,7 +2,18 @@
 @tailwind utilities;
 @tailwind components;
 
+*{
+    box-sizing: border-box;
+}
+
 .home{
     background: linear-gradient(180deg, #141313 76.56%, #3C3737 86.99%);
 }
 
+body::-webkit-scrollbar{
+width: 9px !important;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #141313;
+}
