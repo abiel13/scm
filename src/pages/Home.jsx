@@ -99,6 +99,36 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <section id="Teams" className="w-screen overflow-y-hidden mt-24 h-screen">
+       <h1 className="text-black text-6xl text-center font-medium ">Our Team
+       </h1>
+       <p className="mt-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci architecto magni quos veritatis!</p>
+       
+       <div className=" w-full h-3/4 px-5   flex items-center  ">
+          <div className="w-full h-3/4 flex gap-20 justify-center py-3 items-center px-6 ">
+            <div>
+        <div className="w-24 h-24 rounded-full bg-white">
+          <img src={b} className="w-full h-full rounded-full" alt="" />
+</div>      
+<p>Amino  Joseph</p>
+            </div>
+            <div>
+        <div className="w-24 h-24 rounded-full bg-white">
+          <img src={b} className="w-full h-full rounded-full" alt="" />
+</div>      
+<p>Amino  Joseph</p>
+            </div>
+            <div>
+        <div className="w-24 h-24 rounded-full bg-white">
+          <img src={b} className="w-full h-full rounded-full" alt="" />
+</div>      
+<p>Amino  Joseph</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
     </div>
   );
 }
