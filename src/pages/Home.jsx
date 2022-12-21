@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import webp from "../images/Rectangle 1.png";
 import logo from "../images/SMP@2x.svg";
 import a from "../images/a.png";
 import elipse from "../images/Ellipse 1.png";
 import b from "../images/bb.jpeg";
 import { NavLink } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 function Home() {
+useEffect(() =>{
+  Aos.init({duration:2000})
+},[])
+
   return (
     <div className="overflow-x-hidden scr flex flex-col gap-14">
-      {" "}
+      
       <div className="w-screen h-screen home relative  p-5  ">
         <nav className="flex justify-between  items-center">
           <img src={logo} alt="" />
@@ -79,7 +85,7 @@ function Home() {
         <div className=" w-full h-full px-5 flex items-center  ">
           <div className="w-full h-3/4 flex justify-between px-6  ">
 
-            <div className=" px-3 flex flex-col justify-center items-center py-2 text-center w-2/4">
+            <div data-aos-duration="1000" data-aos="fade-up" className=" px-3 flex flex-col justify-center items-center py-2 text-center w-2/4">
               <h3 className="text-4xl font-sans font-bold  ">
                 Our Creative Process
               </h3>
@@ -95,7 +101,7 @@ function Home() {
               </p>
               
             </div>  
-                      <img src={b} alt="" className="max-h-full w-3/4 object-cover" />
+                      <img data-aos="fade-left" src={b} alt="" className="max-h-full w-3/4 object-cover" />
           </div>
         </div>
       </section>
