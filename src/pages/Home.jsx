@@ -91,7 +91,7 @@ function Home() {
                 Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
                 consectetur adipisicing elit. Natus, pariatur.
                 
-                <button className="bg-black text-white py-2 px-3 mt-5 w-1/2">Join Us</button>
+                <button className="bg-black text-white block py-2 px-3 mt-5 w-1/2">Join Us</button>
               </p>
               
             </div>  
