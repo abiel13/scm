@@ -56,12 +56,15 @@ function Home() {
         </div>
         <img src={elipse} alt="" className="absolute bottom-0 right-0" />
       </div>{" "}
-      <section id="About" className="w-screen overflow-hidden mt-24 min-h-screen lg:h-screen">
+      <section
+        id="About"
+        className="w-screen overflow-hidden mt-24 min-h-screen lg:h-screen"
+      >
         <h1 className="text-black text-6xl text-center font-medium ">
           About Us
         </h1>
         <div className=" w-full h-full px-5 mt-5 flex  items-center  ">
-          <div className="w-full h-3/4  py-5 gap-10 flex-col flex lg:flex-row justify-between px-6  ">
+          <div className="w-full h-3/4  py-5 gap-10 flex-col flex md:flex-row lg:flex-row justify-between px-6  ">
             <div
               data-aos-duration="1000"
               data-aos="fade-right"
@@ -70,11 +73,11 @@ function Home() {
               <h3 className="text-4xl font-sans font-bold  ">
                 Our Creative Process
               </h3>
-              <p className=" text-center mt-8 md:text-xl lg:text-left  w-3/4 ">
+              <p className="w-3/4 text-center mt-8 md:text-xl md:text-left lg:text-left   ">
                 We Collaborate We The Finest Programmers in the Tech Space To
                 Bring You A Products That Matches Your Needs
               </p>
-              <p className="mt-2  w-3/4   flex flex-col items-center lg:items-start lg:text-left lg:text-sm md:text-xl">
+              <p className="mt-2  w-3/4   flex flex-col items-center md:text-left md:items-start lg:items-start lg:text-left lg:text-sm md:text-sm">
                 Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
                 consectetur adipisicing elit. Natus, pariatur.
                 <button className="bg-black text-white block py-2 px-3 mt-5 w-1/2">
@@ -86,7 +89,7 @@ function Home() {
               data-aos="fade-left"
               src={b}
               alt=""
-              className="w-full  lg:max-h-full lg:w-3/4 object-cover"
+              className="w-full md:max-h-full md:w-1/2 lg:max-h-full lg:w-3/4 object-cover"
             />
           </div>
         </div>
@@ -152,19 +155,19 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 h-screen">
+      <section className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 lg:h-screen">
         <h3 className="text-center text-3xl text-blue-500 ">SMP Feautures</h3>
         <p className="mt-4 text-lg font-medium">
           Best Collaboration, Flexible and Intuitive
         </p>
-        <div className="flex justify-between items-center  w-full p-5">
+        <div className="flex flex-col justify-between items-center  w-full p-5 md:flex-row lg:flex-row">
           <img
             data-aos="fade-right"
             src={kid}
             alt="image"
-            className="h-full w-2/5  object-cover"
+            className="h-full md:w-2/5 lg:w-2/5  object-cover"
           />
-          <div data-aos="fade-left" className="h-full  px-3 py-3  mr-24">
+          <div data-aos="fade-left" className="h-full  px-3 py-3  lg:mr-24">
             <h3 className="text-blue-500 font-medium text-xl">
               A unique and standardised approach to education
             </h3>
@@ -224,17 +227,17 @@ function Home() {
         </div>
         <hr className="w-full my-8 text-gray-600" />
       </section>
-      <section className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 h-screen">
-        <div className="w-11/2 h-full flex items-center justify-between px-5">
+      <section className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 lg:h-screen">
+        <div className="w-11/2 h-full flex-col flex items-center justify-between px-5 md:flex-row lg:flex-row">
           <div
             data-aos="fade-right"
-            className="w-1/2 h-1/2 flex flex-col items-center"
+            className="lg:w-1/2 h-1/2 flex flex-col items-center"
           >
             <h3 className="text-blue-500 font-medium text-2xl">
               User-friendly dashboard for staff and admins
             </h3>
             <ul>
-              <div className="flex items-center mt-3 text-gray-500">
+              <div className="flex items-center  mt-3 text-gray-500">
                 <BiListCheck className="text-green-400 text-2xl font-medium" />
                 <p>Give access to staff and teachers based on requirements</p>
               </div>
@@ -273,22 +276,22 @@ function Home() {
             src={nerd}
             alt=""
             data-aos="fade-left"
-            className="w-5/12 object-cover"
+            className="mt-4 md:w-5/12 lg:w-5/12 lg:mt-0 object-cover"
           />
         </div>
       </section>
       <hr />
-      <section className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 h-screen">
-        <div className="w-11/2 h-full flex items-center justify-between px-5">
+      <section className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 lg:h-screen">
+        <div className="w-11/2 h-full flex flex-col items-center  justify-between px-5 md:flex-row lg:flex-row">
           <img
             src={nerds}
             alt=""
             data-aos="fade-right"
-            className="w-5/12 object-cover"
+            className="md:w-5/12 lg:5/12 object-cover"
           />
           <div
             data-aos="fade-left"
-            className="w-1/2 h-1/2 flex flex-col items-center"
+            className=" md:1/2 lg:w-1/2 h-1/2 md:ml-2 lg:ml-2 flex flex-col items-center"
           >
             <h3 className="text-blue-500 font-medium text-2xl">
               Manage multiple centres with one school account
