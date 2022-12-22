@@ -8,11 +8,11 @@ import a from "../images/a.png";
 import elipse from "../images/Ellipse 1.png";
 import kid from "../images/30.png";
 import b from "../images/bb.jpeg";
-import { NavLink } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { BsApple, BsBarChartFill, BsGraphUp } from "react-icons/bs";
 import { BiCopy, BiCopyright, BiListCheck } from "react-icons/bi";
+import Navbar from "../components/navbar";
 
 function Home() {
   useEffect(() => {
@@ -24,52 +24,26 @@ function Home() {
       <div className="w-screen h-screen home relative  p-5  ">
         <nav className="flex justify-between  items-center">
           <img src={logo} alt="" />
-          <ul className="flex gap-10">
-            <li className="navlist">
-              <NavLink className="text-white font-medium  ">Home</NavLink>
-            </li>
-            <li className="navlist">
-              <NavLink to="/about" className="text-white font-medium">
-                About
-              </NavLink>
-            </li>{" "}
-            <li className="navlist">
-              <NavLink to="/teams" className="text-white font-medium">
-                Our Team
-              </NavLink>
-            </li>{" "}
-            <li className="navlist">
-              <NavLink to="/contact" className="text-white font-medium">
-                Contact Us
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/products" className="text-white font-medium">
-                Products
-              </NavLink>
-            </li>
-          </ul>
-
-          <div>
-            <button className="bg-red-400 py-2 px-7 font-medium text-white rounded-md">
-              Login
-            </button>
-            <button className="bg-red-400 py-2 mx-4 px-7 font-medium text-white rounded-md">
-              Sign UP
-            </button>
-          </div>
+          <Navbar />
         </nav>
 
-        <div className="w-11/12  absolute left-0 -translate-x-7 h-4/5 flex items-center">
-          <div className="w-full relative h-3/4 flex ">
+        <div className="w-full mt-9  flex items-center md:mt-24 lg:w-11/12 lg:absolute lg:left-0 lg:-translate-x-7 lg:mt-9  lg:h-4/5 ">
+          <div className="w-full relative h-3/4 flex  ">
             <img
               src={a}
-              className="z-40 right-0 absolute h-3/4  bottom-4"
+              className="hidden lg:block z-40 right-0 absolute h-3/4  bottom-4"
               alt=""
             />
-            <div className="text-white  mt-6 z-50 w-1/2 px-14 py-7 flex    flex-col">
-              <p className="font-bold text-5xl">School Management Program</p>
-              <p className="mt-8 font-light w-3/4">
+            <img
+              src={webp}
+              alt=""
+              className="hidden lg:w-full absolute h-full lg:block"
+            />
+            <div className="text-white p-3  mt-8 z-40  py-7 flex items-center  w-full flex-col lg:px-14 lg:items-start  lg:w-1/2">
+              <p className="font-bold text-5xl text-center   w-full lg:text-5xl lg:text-left">
+                School Management Program
+              </p>
+              <p className=" text-center font-medium w-full mt-8 md:w-4/5 lg:font-light lg:w-3/4 lg:text-left">
                 Beautifully Designed and intellegently Developed School
                 Management System For Best User Experience, We Put In Years Of
                 Work In Building What Works Best For Your Schools
@@ -82,25 +56,25 @@ function Home() {
         </div>
         <img src={elipse} alt="" className="absolute bottom-0 right-0" />
       </div>{" "}
-      <section id="About" className="w-screen overflow-hidden mt-24 h-screen">
+      <section id="About" className="w-screen overflow-hidden mt-24 min-h-screen lg:h-screen">
         <h1 className="text-black text-6xl text-center font-medium ">
           About Us
         </h1>
-        <div className=" w-full h-full px-5 flex items-center  ">
-          <div className="w-full h-3/4 flex justify-between px-6  ">
+        <div className=" w-full h-full px-5 mt-5 flex  items-center  ">
+          <div className="w-full h-3/4  py-5 gap-10 flex-col flex lg:flex-row justify-between px-6  ">
             <div
               data-aos-duration="1000"
-              data-aos="fade-up"
-              className=" px-3 flex flex-col justify-center items-center py-2 text-center w-2/4"
+              data-aos="fade-right"
+              className=" px-3 flex flex-col justify-center items-center py-2 text-center lg:w-2/4"
             >
               <h3 className="text-4xl font-sans font-bold  ">
                 Our Creative Process
               </h3>
-              <p className="mt-8 text-left  w-3/4 ">
+              <p className=" text-center mt-8 md:text-xl lg:text-left  w-3/4 ">
                 We Collaborate We The Finest Programmers in the Tech Space To
                 Bring You A Products That Matches Your Needs
               </p>
-              <p className="mt-2 text-left w-3/4 ">
+              <p className="mt-2  w-3/4   flex flex-col items-center lg:items-start lg:text-left lg:text-sm md:text-xl">
                 Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
                 consectetur adipisicing elit. Natus, pariatur.
                 <button className="bg-black text-white block py-2 px-3 mt-5 w-1/2">
@@ -112,7 +86,7 @@ function Home() {
               data-aos="fade-left"
               src={b}
               alt=""
-              className="max-h-full w-3/4 object-cover"
+              className="w-full  lg:max-h-full lg:w-3/4 object-cover"
             />
           </div>
         </div>
@@ -127,14 +101,14 @@ function Home() {
           </p>
         </div>
 
-        <div className="w-3/5 leading-8 text-gray-500 text-lg text-center  ">
+        <div className="leading-8 text-gray-500 text-lg text-center lg:w-3/5   ">
           School Management Program popularly known as SMP is an all-in-one
           education software where you can manage and track your student
           progression, teachers' profile with an amazing and intelligent
           reporting system to help you save money, comply with regulations,
           eliminate manual administration and many more…
         </div>
-        <div className="w-full mt-24 flex justify-between ">
+        <div className="w-full mt-24 flex flex-wrap  justify-between ">
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -190,7 +164,7 @@ function Home() {
             alt="image"
             className="h-full w-2/5  object-cover"
           />
-          <div data-aos='fade-left'  className="h-full  px-3 py-3  mr-24">
+          <div data-aos="fade-left" className="h-full  px-3 py-3  mr-24">
             <h3 className="text-blue-500 font-medium text-xl">
               A unique and standardised approach to education
             </h3>
