@@ -91,7 +91,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 h-screen">
+      <section className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 lg:h-screen">
         <div>
           <h3 className="my-8 text-center font-medium text-3xl text-blue-500">
             What Makes Us Different
@@ -108,11 +108,11 @@ function Home() {
           reporting system to help you save money, comply with regulations,
           eliminate manual administration and many more…
         </div>
-        <div className="w-full mt-24 flex flex-wrap  justify-between ">
+        <div className="w-full mt-24 flex flex-col items-center gap-4 justify-between lg:flex-row">
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            className="cards flex flex-col  items-center w-1/4 py-3 px-5 bg-white shadow-md "
+            className="cards flex flex-col w-4/5   items-center lg:w-1/4 py-3 px-5 bg-white shadow-md "
           >
             <BsApple className="text-blue-500 text-3xl" />
             <p className="text-blue-500 my-3">Better approach to education</p>
@@ -126,7 +126,7 @@ function Home() {
           <div
             data-aos="fade-up"
             data-aos-duration="2000"
-            className="cards flex flex-col  items-center w-1/4 py-3 px-5 bg-white shadow-md "
+            className="cards flex flex-col w-4/5  items-center lg:w-1/4 py-3 px-5 bg-white shadow-md "
           >
             <BsBarChartFill className="text-blue-500 text-3xl" />
             <p className="text-blue-500 my-3">SMP is Flexible & Customisable</p>
@@ -140,7 +140,7 @@ function Home() {
           <div
             data-aos="fade-up"
             data-aos-duration="3000"
-            className="cards flex flex-col  items-center w-1/4 py-3 px-5 bg-white shadow-md "
+            className="cards flex flex-col w-4/5   items-center lg:w-1/4 py-3 px-5 bg-white shadow-md "
           >
             <BsGraphUp className="text-blue-500 text-3xl" />
             <p className="text-blue-500 my-3">Aid Academic Progress</p>
