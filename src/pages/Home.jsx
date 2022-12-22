@@ -62,7 +62,7 @@ function Home() {
 
         <div className="w-11/12  absolute left-0 -translate-x-7 h-4/5 flex items-center">
           <div className="w-full relative h-3/4 flex ">
-            <img src={webp} alt="" className="w-full absolute h-full" />
+        
             <img
               src={a}
               className="z-40 right-0 absolute h-3/4  bottom-4"
