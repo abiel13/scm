@@ -62,7 +62,6 @@ function Home() {
 
         <div className="w-11/12  absolute left-0 -translate-x-7 h-4/5 flex items-center">
           <div className="w-full relative h-3/4 flex ">
-        
             <img
               src={a}
               className="z-40 right-0 absolute h-3/4  bottom-4"
@@ -191,97 +190,57 @@ function Home() {
             alt="image"
             className="h-full w-2/5  object-cover"
           />
-          <div className="h-full  px-3 py-3  mr-24">
+          <div data-aos='fade-left'  className="h-full  px-3 py-3  mr-24">
             <h3 className="text-blue-500 font-medium text-xl">
               A unique and standardised approach to education
             </h3>
             <ul className="leading-8 text-gray-500">
-              <div
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                className="flex mt-2 items-center"
-              >
+              <div className="flex mt-2 items-center">
                 {" "}
                 <BiListCheck className="text-green-400 text-xl" />
                 Educational platform that provides ultimate peace of mind
               </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="2000"
-                className="flex mt-2 items-center"
-              >
+              <div className="flex mt-2 items-center">
                 {" "}
                 <BiListCheck className="text-green-400 text-xl" />
                 SMP manage the challenges and deliver the best for your school
               </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="3000"
-                className="flex mt-2 items-center"
-              >
+              <div className="flex mt-2 items-center">
                 {" "}
                 <BiListCheck className="text-green-400 text-xl" />
                 Comply with regulations and eliminate manual administration
               </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="4000"
-                className="flex mt-2 items-center"
-              >
+              <div className="flex mt-2 items-center">
                 {" "}
                 <BiListCheck className="text-green-400 text-xl" />
                 Student Record Management
               </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="5000"
-                className="flex mt-2 items-center"
-              >
+              <div className="flex mt-2 items-center">
                 {" "}
                 <BiListCheck className="text-green-400 text-xl" />
                 Student & staff Attendance Reporting
               </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="6000"
-                className="flex mt-2 items-center"
-              >
+              <div className="flex mt-2 items-center">
                 {" "}
                 <BiListCheck className="text-green-400 text-xl" />
                 In built SMS messaging (add-on)
               </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="7000"
-                className="flex mt-2 items-center"
-              >
+              <div className="flex mt-2 items-center">
                 {" "}
                 <BiListCheck className="text-green-400 text-xl" />
                 Data Import and Export
               </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="8000"
-                className="flex mt-2 items-center"
-              >
+              <div className="flex mt-2 items-center">
                 {" "}
                 <BiListCheck className="text-green-400 text-xl" />
                 eLearning for Staff Training (add-on)
               </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="9000"
-                className="flex mt-2 items-center"
-              >
+              <div className="flex mt-2 items-center">
                 {" "}
                 <BiListCheck className="text-green-400 text-xl" />
                 Child Progression & Development
               </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="10000"
-                className="flex mt-2 items-center"
-              >
+              <div className="flex mt-2 items-center">
                 {" "}
                 <BiListCheck className="text-green-400 text-xl" />
                 Status Visibility and Reports
@@ -358,32 +317,26 @@ function Home() {
             className="w-1/2 h-1/2 flex flex-col items-center"
           >
             <h3 className="text-blue-500 font-medium text-2xl">
-            Manage multiple centres with one school accoun
+              Manage multiple centres with one school account
             </h3>
             <ul>
               <div className="flex items-center mt-3 text-gray-500">
                 <BiListCheck className="text-green-400 text-2xl font-medium" />
-                <p> Grant access to centre or regional managers
- </p>
+                <p> Grant access to centre or regional managers</p>
               </div>
               <div className="flex items-center mt-3 text-gray-500">
                 <BiListCheck className="text-green-400 text-2xl font-medium" />
                 <p>
-                Assign teachers to grades, classrooms, schemes and centres
+                  Assign teachers to grades, classrooms, schemes and centres
                 </p>
               </div>
               <div className="flex items-center mt-3 text-gray-500">
                 <BiListCheck className="text-green-400 text-2xl font-medium" />
-                <p>
-                Transfer students from centre to another
-                </p>
+                <p>Transfer students from centre to another</p>
               </div>
               <div className="flex items-center mt-3 text-gray-500">
                 <BiListCheck className="text-green-400 text-2xl font-medium" />
-                <p>
-                  {" "}
-                  Assign students to schemes and classes with ease
-                </p>
+                <p> Assign students to schemes and classes with ease</p>
               </div>
               <div className="flex items-center mt-3 text-gray-500">
                 <BiListCheck className="text-green-400 text-2xl font-medium" />
@@ -396,11 +349,9 @@ function Home() {
           </div>
         </div>
       </section>
-     
-
-     <footer className="w-screen h-max bg-blue-500 text-center py-3 flex items-center text-white gap-2 justify-center">
-<p>Copyright</p> <BiCopyright /> <p>SMP</p>
-     </footer>
+      <footer className="w-screen h-max bg-blue-500 text-center py-3 flex items-center text-white gap-2 justify-center">
+        <p>Copyright</p> <BiCopyright /> <p>SMP</p>
+      </footer>
     </div>
   );
 }
