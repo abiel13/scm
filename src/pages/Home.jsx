@@ -34,11 +34,7 @@ function Home() {
               className="hidden lg:block z-40 right-0 absolute h-3/4  bottom-4"
               alt=""
             />
-            <img
-              src={webp}
-              alt=""
-              className="hidden lg:w-full absolute h-full lg:block"
-            />
+          
             <div className="text-white p-3  mt-8 z-40  py-7 flex items-center  w-full flex-col lg:px-14 lg:items-start  lg:w-1/2">
               <p className="font-bold text-5xl text-center   w-full lg:text-5xl lg:text-left">
                 School Management Program
