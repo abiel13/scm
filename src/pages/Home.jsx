@@ -1,13 +1,18 @@
 import React, { useEffect } from "react";
 import webp from "../images/Rectangle 1.png";
+import nerd from "../images/nerd.jpeg";
+import nerds from "../images/NERDS.jpeg";
+
 import logo from "../images/SMP@2x.svg";
 import a from "../images/a.png";
 import elipse from "../images/Ellipse 1.png";
+import kid from "../images/30.png";
 import b from "../images/bb.jpeg";
 import { NavLink } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { BsApple, BsBarChartFill, BsGraphUp } from "react-icons/bs";
+import { BiCopy, BiCopyright, BiListCheck } from "react-icons/bi";
 
 function Home() {
   useEffect(() => {
@@ -113,7 +118,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="w-screen px-5 flex-col items-center flex overflow-y-hidden mt-24 h-screen">
+      <section className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 h-screen">
         <div>
           <h3 className="my-8 text-center font-medium text-3xl text-blue-500">
             What Makes Us Different
@@ -174,60 +179,228 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="w-screen px-5 flex-col items-center flex overflow-y-hidden mt-24 h-screen">
-<h3 className="text-center text-3xl text-blue-500 ">SMP Feautures</h3>
-<p className="mt-4 text-lg font-medium">Best Collaboration, Flexible and Intuitive</p>
-<div>
-  
-</div>
-      </section>
-      <section id="Teams" className="w-screen overflow-y-hidden mt-24 h-screen">
-        <h1 className="text-black text-6xl mt-8 text-center font-medium ">
-          Our Team
-        </h1>
-        <p className="mt-2 text-center">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
-          architecto magni quos veritatis!
+      <section className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 h-screen">
+        <h3 className="text-center text-3xl text-blue-500 ">SMP Feautures</h3>
+        <p className="mt-4 text-lg font-medium">
+          Best Collaboration, Flexible and Intuitive
         </p>
-
-        <div className=" w-full h-3/4 px-5 -mt-5 flex items-center  ">
-          <div className="w-full h-3/4 flex gap-20  justify-between py-3 items-center px-6 ">
-            <div
-              className="flex flex-col items-center"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <div className="w-1/3 h-1/3 rounded-full bg-white">
-                <img src={b} className="w-full h-full rounded-full" alt="" />
+        <div className="flex justify-between items-center  w-full p-5">
+          <img
+            data-aos="fade-right"
+            src={kid}
+            alt="image"
+            className="h-full w-2/5  object-cover"
+          />
+          <div className="h-full  px-3 py-3  mr-24">
+            <h3 className="text-blue-500 font-medium text-xl">
+              A unique and standardised approach to education
+            </h3>
+            <ul className="leading-8 text-gray-500">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                className="flex mt-2 items-center"
+              >
+                {" "}
+                <BiListCheck className="text-green-400 text-xl" />
+                Educational platform that provides ultimate peace of mind
               </div>
-              <p>Amino Joseph</p>
-              <p>Lead Front End Engineer</p>
-            </div>
-            <div
-              className="flex flex-col items-center"
-              data-aos="fade-up"
-              data-aos-duration="2000"
-            >
-              <div className="w-1/3 h-1/3 rounded-full bg-white">
-                <img src={b} className="w-full h-full rounded-full" alt="" />
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                className="flex mt-2 items-center"
+              >
+                {" "}
+                <BiListCheck className="text-green-400 text-xl" />
+                SMP manage the challenges and deliver the best for your school
               </div>
-              <p>Amino Joseph</p>
-              <p>Senior Back End Engineer</p>
-            </div>
-            <div
-              className="flex flex-col items-center"
-              data-aos="fade-up"
-              data-aos-duration="3000"
-            >
-              <div className="w-1/3 h-1/3 rounded-full bg-white">
-                <img src={b} className="w-full h-full rounded-full" alt="" />
+              <div
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                className="flex mt-2 items-center"
+              >
+                {" "}
+                <BiListCheck className="text-green-400 text-xl" />
+                Comply with regulations and eliminate manual administration
               </div>
-              <p>Amino Joseph</p>
-              <p>Digital Marketer</p>
-            </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="4000"
+                className="flex mt-2 items-center"
+              >
+                {" "}
+                <BiListCheck className="text-green-400 text-xl" />
+                Student Record Management
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="5000"
+                className="flex mt-2 items-center"
+              >
+                {" "}
+                <BiListCheck className="text-green-400 text-xl" />
+                Student & staff Attendance Reporting
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="6000"
+                className="flex mt-2 items-center"
+              >
+                {" "}
+                <BiListCheck className="text-green-400 text-xl" />
+                In built SMS messaging (add-on)
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="7000"
+                className="flex mt-2 items-center"
+              >
+                {" "}
+                <BiListCheck className="text-green-400 text-xl" />
+                Data Import and Export
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="8000"
+                className="flex mt-2 items-center"
+              >
+                {" "}
+                <BiListCheck className="text-green-400 text-xl" />
+                eLearning for Staff Training (add-on)
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="9000"
+                className="flex mt-2 items-center"
+              >
+                {" "}
+                <BiListCheck className="text-green-400 text-xl" />
+                Child Progression & Development
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="10000"
+                className="flex mt-2 items-center"
+              >
+                {" "}
+                <BiListCheck className="text-green-400 text-xl" />
+                Status Visibility and Reports
+              </div>
+            </ul>
+          </div>
+        </div>
+        <hr className="w-full my-8 text-gray-600" />
+      </section>
+      <section className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 h-screen">
+        <div className="w-11/2 h-full flex items-center justify-between px-5">
+          <div
+            data-aos="fade-right"
+            className="w-1/2 h-1/2 flex flex-col items-center"
+          >
+            <h3 className="text-blue-500 font-medium text-2xl">
+              User-friendly dashboard for staff and admins
+            </h3>
+            <ul>
+              <div className="flex items-center mt-3 text-gray-500">
+                <BiListCheck className="text-green-400 text-2xl font-medium" />
+                <p>Give access to staff and teachers based on requirements</p>
+              </div>
+              <div className="flex items-center mt-3 text-gray-500">
+                <BiListCheck className="text-green-400 text-2xl font-medium" />
+                <p>
+                  Easily transition your student from classroom, grade, scheme
+                  or centre
+                </p>
+              </div>
+              <div className="flex items-center mt-3 text-gray-500">
+                <BiListCheck className="text-green-400 text-2xl font-medium" />
+                <p>
+                  Generate reports as needed based on school needs and demands
+                </p>
+              </div>
+              <div className="flex items-center mt-3 text-gray-500">
+                <BiListCheck className="text-green-400 text-2xl font-medium" />
+                <p>
+                  {" "}
+                  Manage your students and staff clock-in and clock-out with
+                  ease
+                </p>
+              </div>
+              <div className="flex items-center mt-3 text-gray-500">
+                <BiListCheck className="text-green-400 text-2xl font-medium" />
+                <p>
+                  {" "}
+                  Built with great flexibility to customise your data based on
+                  your needs
+                </p>
+              </div>
+            </ul>
+          </div>
+          <img
+            src={nerd}
+            alt=""
+            data-aos="fade-left"
+            className="w-5/12 object-cover"
+          />
+        </div>
+      </section>
+      <hr />
+      <section className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 h-screen">
+        <div className="w-11/2 h-full flex items-center justify-between px-5">
+          <img
+            src={nerds}
+            alt=""
+            data-aos="fade-right"
+            className="w-5/12 object-cover"
+          />
+          <div
+            data-aos="fade-left"
+            className="w-1/2 h-1/2 flex flex-col items-center"
+          >
+            <h3 className="text-blue-500 font-medium text-2xl">
+            Manage multiple centres with one school accoun
+            </h3>
+            <ul>
+              <div className="flex items-center mt-3 text-gray-500">
+                <BiListCheck className="text-green-400 text-2xl font-medium" />
+                <p> Grant access to centre or regional managers
+ </p>
+              </div>
+              <div className="flex items-center mt-3 text-gray-500">
+                <BiListCheck className="text-green-400 text-2xl font-medium" />
+                <p>
+                Assign teachers to grades, classrooms, schemes and centres
+                </p>
+              </div>
+              <div className="flex items-center mt-3 text-gray-500">
+                <BiListCheck className="text-green-400 text-2xl font-medium" />
+                <p>
+                Transfer students from centre to another
+                </p>
+              </div>
+              <div className="flex items-center mt-3 text-gray-500">
+                <BiListCheck className="text-green-400 text-2xl font-medium" />
+                <p>
+                  {" "}
+                  Assign students to schemes and classes with ease
+                </p>
+              </div>
+              <div className="flex items-center mt-3 text-gray-500">
+                <BiListCheck className="text-green-400 text-2xl font-medium" />
+                <p>
+                  {" "}
+                  Relocate or assign teacher to multiple classroom and centres
+                </p>
+              </div>
+            </ul>
           </div>
         </div>
       </section>
+     
+
+     <footer className="w-screen h-max bg-blue-500 text-center py-3 flex items-center text-white gap-2 justify-center">
+<p>Copyright</p> <BiCopyright /> <p>SMP</p>
+     </footer>
     </div>
   );
 }
