@@ -130,15 +130,15 @@ function Home() {
           reporting system to help you save money, comply with regulations,
           eliminate manual administration and many more…
         </div>
-        <div className="w-full mt-8 flex justify-between ">
+        <div className="w-full mt-24 flex justify-between ">
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
             className="cards flex flex-col  items-center w-1/4 py-3 px-5 bg-white shadow-md "
           >
-            <BsApple className="text-blue-500 text-lg" />
+            <BsApple className="text-blue-500 text-3xl" />
             <p className="text-blue-500 my-3">Better approach to education</p>
-            <p className="text-gray-500 text-center my-3">
+            <p className="text-gray-500 text-center my-3 leading-7">
               SMP will improve efficiency and make the best of your most
               valuable time. Create aistear & siolta assessment, milestones,
               sleep check, nappy, activity reports with easy. It comes with
@@ -150,9 +150,9 @@ function Home() {
             data-aos-duration="2000"
             className="cards flex flex-col  items-center w-1/4 py-3 px-5 bg-white shadow-md "
           >
-            <BsBarChartFill className="text-blue-500 text-lg" />
+            <BsBarChartFill className="text-blue-500 text-3xl" />
             <p className="text-blue-500 my-3">SMP is Flexible & Customisable</p>
-            <p className="text-gray-500 text-center my-3">
+            <p className="text-gray-500 text-center my-3 leading-7">
               SMP can be customised based on your school needs. Create distinct
               records and reports with your school name and logo. It is flexible
               to use and inteligent, making daily cumbersome routines more
@@ -164,15 +164,22 @@ function Home() {
             data-aos-duration="3000"
             className="cards flex flex-col  items-center w-1/4 py-3 px-5 bg-white shadow-md "
           >
-            <BsGraphUp className="text-blue-500 text-lg" />
+            <BsGraphUp className="text-blue-500 text-3xl" />
             <p className="text-blue-500 my-3">Aid Academic Progress</p>
-            <p className="text-gray-500 text-center my-3">
+            <p className="text-gray-500 text-center my-3 leading-7">
               Easy transition from those bulky paper work. Locate students and
               teachers records easily with the click of a mouse. SMP will help
               your school to reduce unnecessary costs and overheads
             </p>
           </div>
         </div>
+      </section>
+      <section className="w-screen px-5 flex-col items-center flex overflow-y-hidden mt-24 h-screen">
+<h3 className="text-center text-3xl text-blue-500 ">SMP Feautures</h3>
+<p className="mt-4 text-lg font-medium">Best Collaboration, Flexible and Intuitive</p>
+<div>
+  
+</div>
       </section>
       <section id="Teams" className="w-screen overflow-y-hidden mt-24 h-screen">
         <h1 className="text-black text-6xl mt-8 text-center font-medium ">
