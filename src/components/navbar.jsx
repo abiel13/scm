@@ -17,7 +17,7 @@ function Navbar() {
         />
       </div>
       <ul
-        className={` fixed ${trans} w-1/2 top-0 right-0 flex-col justify-around transition-transform ease-in-out duration-500 items-center h-screen white p-5 z-50 flex gap-10 lg:bg-transparent lg:flex-row lg:transition-none lg:relative lg:translate-y-0`}
+        className={` fixed ${trans} w-1/2 h-screen top-0 right-0 lg:h-max flex-col justify-around transition-transform ease-in-out duration-500 items-center  white p-5 z-50 flex gap-10 lg:bg-transparent lg:flex-row lg:transition-none lg:relative lg:translate-x-0`}
       >
         <div
           onClick={() => {
