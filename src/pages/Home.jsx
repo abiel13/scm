@@ -22,7 +22,7 @@ function Home() {
   return (
     <div id="home" className="overflow-x-hidden scr flex flex-col gap-14">
       <div className="w-screen h-screen home relative  p-5  ">
-        <nav className="fixed top-0 left-0 right-0  bg-gray-900   z-50  px-3 py-2 shadow-md w-full flex justify-between  items-center">
+        <nav className="fixed top-0 left-0 right-0  black   z-50  px-4 py-3 shadow-md lg:px-2 lg:py-1 w-full flex justify-between  items-center">
           <img src={logo} alt="" />
           <Navbar />
         </nav>

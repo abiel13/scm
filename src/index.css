@@ -22,3 +22,11 @@ body::-webkit-scrollbar-thumb{
 .login{
     background: linear-gradient(45deg,rgba(0, 0, 0, 0.481) ,transparent) ,  url(./images/lib.jpeg);
 }
+
+.black{
+    background: #141313cc;
+}
+
+.white{
+    background: #fffffffa;
+}
