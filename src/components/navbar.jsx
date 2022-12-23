@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 function Navbar() {
   const [active, setActive] = useState(false);
@@ -21,44 +22,36 @@ function Navbar() {
         <div
           onClick={() => {
             setActive((prev) => !prev);
-          
           }}
           className="self-end fixed text-xl cursor-pointer hover:border-red-400 text-red-400 font-bold border px-2 lg:hidden "
         >
           X
         </div>
         <li className="navlist">
-          <NavLink className="text-white font-medium  ">Home</NavLink>
+          <Link to="home" duration={1000} smooth={true} className="text-white cursor-pointer font-medium  ">Home</Link>
         </li>
         <li className="navlist">
-          <NavLink to="/about" className="text-white font-medium">
+          <Link smooth={true} duration={1000}  to="About" className="cursor-pointer text-white  font-medium">
             About
-          </NavLink>
+          </Link>
         </li>{" "}
-        <li className="navlist">
-          <NavLink to="/teams" className="text-white font-medium">
-            Our Team
-          </NavLink>
-        </li>{" "}
-        <li className="navlist">
-          <NavLink to="/contact" className="text-white font-medium">
-            Contact Us
-          </NavLink>
-        </li>
+        {" "}
+        
         <li>
-          <NavLink to="/products" className="text-white font-medium">
-            Products
-          </NavLink>
+          <Link smooth={true} duration={1000}  to="Feautures" className="cursor-pointer text-white font-medium">
+          Feautures 
+          </Link>
         </li>
-        <div className="flex flex-col gap-6 lg:block">
-          <button className="bg-red-400 py-2 mx-4 px-7 font-medium text-white rounded-md">
+        
+      </ul>
+      <div className="flex flex-col gap-6 lg:flex-row">
+          <button className="hidden lg:block bg-red-400 py-2 mx-4 px-7 font-medium text-white rounded-md">
             Sign UP
           </button>
           <button className="bg-red-400 py-2 px-7 font-medium text-white rounded-md">
             Login
           </button>
         </div>
-      </ul>
     </>
   );
 }

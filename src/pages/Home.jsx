@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import webp from "../images/Rectangle 1.png";
 import nerd from "../images/nerd.jpeg";
 import nerds from "../images/NERDS.jpeg";
-
 import logo from "../images/SMP@2x.svg";
 import a from "../images/a.png";
 import elipse from "../images/Ellipse 1.png";
@@ -20,9 +19,9 @@ function Home() {
   }, []);
 
   return (
-    <div className="overflow-x-hidden scr flex flex-col gap-14">
+    <div id="home" className="overflow-x-hidden scr flex flex-col gap-14">
       <div className="w-screen h-screen home relative  p-5  ">
-        <nav className="flex justify-between  items-center">
+        <nav className="fixed top-0 left-0 right-0  bg-gray-900   z-50  px-3 py-2 shadow-md w-full flex justify-between  items-center">
           <img src={logo} alt="" />
           <Navbar />
         </nav>
@@ -52,8 +51,7 @@ function Home() {
         </div>
         <img src={elipse} alt="" className="absolute bottom-0 right-0" />
       </div>{" "}
-      <section
-        id="About"
+      <section id="About"
         className="w-screen overflow-hidden mt-24 min-h-screen lg:h-screen"
       >
         <h1 className="text-black text-6xl text-center font-medium ">
@@ -90,7 +88,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 lg:h-screen">
+      <section  className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 lg:h-screen">
         <div>
           <h3 className="my-8 text-center font-medium text-3xl text-blue-500">
             What Makes Us Different
@@ -151,7 +149,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 lg:h-screen">
+      <section id="Feautures" className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 lg:h-screen">
         <h3 className="text-center text-3xl text-blue-500 ">SMP Feautures</h3>
         <p className="mt-4 text-lg font-medium">
           Best Collaboration, Flexible and Intuitive
