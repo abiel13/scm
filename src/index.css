@@ -30,3 +30,7 @@ body::-webkit-scrollbar-thumb{
 .white{
     background: #fffffffa;
 }
+.signup{
+    background: linear-gradient(45deg,rgba(0, 0, 0, 0.481) ,transparent) ,  url(./images/lib.jpeg);
+}
+
