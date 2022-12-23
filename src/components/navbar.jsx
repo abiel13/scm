@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-scroll";
 
@@ -31,26 +31,30 @@ function Navbar() {
           <Link to="home" duration={1000} smooth={true} className="text-white cursor-pointer font-medium  ">Home</Link>
         </li>
         <li className="navlist">
-          <Link smooth={true} duration={1000}  to="About" className="cursor-pointer text-white  font-medium">
+          <Link smooth={true} to="About" className="cursor-pointer text-white  font-medium">
             About
           </Link>
         </li>{" "}
         {" "}
         
         <li>
-          <Link smooth={true} duration={1000}  to="Feautures" className="cursor-pointer text-white font-medium">
+          <Link smooth={true}  to="Feautures" className="cursor-pointer text-white font-medium">
           Feautures 
           </Link>
         </li>
-        
+        <li>
+          <Link smooth={true}  to="Testimonials" className="cursor-pointer text-white font-medium">
+          Testimonials 
+          </Link>
+        </li>
       </ul>
       <div className="flex flex-col gap-6 lg:flex-row">
-          <button className="hidden lg:block bg-red-400 py-2 mx-4 px-7 font-medium text-white rounded-md">
+          <NavLink to='/signup' className="hidden lg:block bg-red-400 py-2 mx-4 px-7 font-medium text-white rounded-md">
             Sign UP
-          </button>
-          <button className="bg-red-400 py-2 px-7 font-medium text-white rounded-md">
+          </NavLink>
+          <NavLink to='/login' className="bg-red-400 py-2 px-7 font-medium text-white rounded-md">
             Login
-          </button>
+          </NavLink>
         </div>
     </>
   );

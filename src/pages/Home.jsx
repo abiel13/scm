@@ -12,6 +12,7 @@ import "aos/dist/aos.css";
 import { BsApple, BsBarChartFill, BsGraphUp } from "react-icons/bs";
 import { BiCopy, BiCopyright, BiListCheck } from "react-icons/bi";
 import Navbar from "../components/navbar";
+import { Link } from "react-router-dom";
 
 function Home() {
   useEffect(() => {
@@ -43,9 +44,9 @@ function Home() {
                 Management System For Best User Experience, We Put In Years Of
                 Work In Building What Works Best For Your Schools
               </p>
-              <button className="bg-red-400 shadow-md w-1/3 py-3 mt-6 rounded-md">
+              <Link to='/signup' className="bg-red-400 text-center shadow-md w-1/3 py-3 mt-6 rounded-md">
                 Get Started
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -275,7 +276,7 @@ function Home() {
         </div>
       </section>
       <hr />
-      <section className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 lg:h-screen">
+      <section id='Testimonials' className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 lg:h-screen">
         <div className="w-11/2 h-full flex flex-col items-center  justify-between px-5 md:flex-row lg:flex-row">
           <img
             src={nerds}
