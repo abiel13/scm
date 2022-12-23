@@ -20,5 +20,5 @@ body::-webkit-scrollbar-thumb{
 
 
 .login{
-    background: linear-gradient(45deg,rgba(0, 0, 0, 0.281) ,transparent) ,  url(./images/lib.jpeg);
+    background: linear-gradient(45deg,rgba(0, 0, 0, 0.481) ,transparent) ,  url(./images/lib.jpeg);
 }
