@@ -17,3 +17,8 @@ width: 9px !important;
 body::-webkit-scrollbar-thumb{
     background-color: #141313;
 }
+
+
+.login{
+    background: linear-gradient(45deg,rgba(0, 0, 0, 0.281) ,transparent) ,  url(./images/lib.jpeg);
+}
