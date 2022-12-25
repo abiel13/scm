@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/SMP@2x.svg";
+import logo from "../images/SMP.svg";
 
 function Login() {
   return (

@@ -6,9 +6,7 @@
     box-sizing: border-box;
 }
 
-.home{
-    background: linear-gradient(180deg, #141313 76.56%, #3C3737 86.99%);
-}
+
 
 body::-webkit-scrollbar{
 width: 9px !important;
@@ -23,17 +21,11 @@ body::-webkit-scrollbar-thumb{
     background: linear-gradient(45deg,rgba(0, 0, 0, 0.481) ,transparent) ,  url(./images/lib.jpeg);
 }
 
-.black{
-    background: #141313cc;
-}
 
-.white{
-    background: #fffffffa;
-}
 .signup{
     background: linear-gradient(45deg,rgba(0, 0, 0, 0.481) ,transparent) ,  url(./images/lib.jpeg);
 }
 
-@media screen and (min-width:280px) {
-    
+.bg{
+    background-color: #31322c;
 }

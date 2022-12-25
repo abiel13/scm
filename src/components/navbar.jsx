@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+import menu from '../images/menu.png'
 import { Link } from "react-scroll";
 
 function Navbar() {
@@ -9,15 +9,15 @@ function Navbar() {
   return (
     <>
       <div>
-        <FaBars
-          className="text-white text-2xl cursor-pointer lg:hidden"
+        <img src={menu}
+          className="w-7 cursor-pointer lg:hidden"
           onClick={() => {
             setActive((prev) => !prev);
           }}
         />
       </div>
       <ul
-        className={` fixed ${trans} w-1/2 h-screen top-0 right-0 lg:h-max flex-col justify-around transition-transform ease-in-out duration-500 items-center  white p-5 z-50 flex gap-10 lg:bg-transparent lg:flex-row lg:transition-none lg:relative lg:translate-x-0`}
+        className={` fixed ${trans} w-1/2 h-screen top-0 right-0 lg:h-max flex-col justify-around transition-transform ease-in-out duration-500 items-center  bg-white p-5 z-50 flex gap-10 lg:bg-transparent lg:flex-row lg:transition-none lg:relative lg:translate-x-0`}
       >
         <div
           onClick={() => {

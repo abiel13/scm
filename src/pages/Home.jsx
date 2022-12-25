@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
-import webp from "../images/Rectangle 1.png";
 import nerd from "../images/nerd.jpeg";
 import nerds from "../images/NERDS.jpeg";
-import logo from "../images/SMP@2x.svg";
-import a from "../images/a.png";
-import elipse from "../images/Ellipse 1.png";
+import logo from "../images/SMP.svg";
+import butt from "../images/Ellipse 1.png";
+import ccc from "../images/Ellipse 2.png";
 import kid from "../images/30.png";
 import b from "../images/bb.jpeg";
 import Aos from "aos";
+import bottom from "../images/Saly-16.png";
 import "aos/dist/aos.css";
 import { BsApple, BsBarChartFill, BsGraphUp } from "react-icons/bs";
 import { BiCopy, BiCopyright, BiListCheck } from "react-icons/bi";
@@ -21,39 +21,40 @@ function Home() {
 
   return (
     <div id="home" className="overflow-x-hidden scr flex flex-col gap-14">
-      <div className="w-screen h-screen home  p-5  ">
-        <nav className="fixed top-0 left-0 right-0  black   z-50  px-4 py-3 shadow-md lg:px-2 lg:py-1 w-full flex justify-between  items-center">
-          <img src={logo} alt="" />
-          <Navbar />
-        </nav>
-
-        <div className="w-full mt-9  flex items-center   h-full md:mt-24 lg:w-11/12 lg:absolute lg:left-0 lg:-translate-x-7 lg:mt-9  lg:h-4/5 ">
-          <div className="w-full items-center  h-full relative lg:h-3/4 flex  ">
-            <img
-              src={a}
-              className="hidden lg:block z-40 right-0 absolute h-3/4  bottom-4"
-              alt=""
-            />
-
-            <div className="text-white p-3    mt-8 z-40 bg  py-7 flex items-center  w-full flex-col lg:px-14 lg:items-start  lg:w-1/2">
-              <p className="font-bold  text-5xl text-center   w-full lg:text-5xl lg:text-left">
-                School Management Program
-              </p>
-              <p className=" text-left font-medium w-full mt-8 md:w-4/5 md:text-2xl lg:font-light lg:w-3/4 lg:text-left">
-                Beautifully Designed and intellegently Developed School
-                Management System For Best User Experience, We Put In Years Of
-                Work In Building What Works Best For Your Schools
-              </p>
-              <Link
-                to="/signup"
-                className="bg-red-400 text-center shadow-md w-1/2 md:w-1/2 md:text-2xl  md:font-medium py-4   mt-6 rounded-md"
-              >
-                Get Started
-              </Link>
-            </div>
+      <div className="w-screen h-screen  relative    ">
+        <div className="w-full h-2/4 bg relative px-4">
+          <div className="flex items-center w-full  justify-between">
+            {" "}
+            <img src={logo} alt="" className="w-32 py-3 " />
+            <Navbar />
+          </div>
+          <div className="w-full h-full  absolute inset-0 flex flex-col items-start justify-center px-2 text-white">
+            <h1 className="text-3xl mt-5 font-medium w-11/12">
+              School <span className="text-purple-500">Management</span> Program{" "}
+            </h1>
+            <p className="text-sm w-3/4 leading-2 font-sans font-medium ">
+              Beautifully Designed and intellegently Developed School Management
+              System For Best User Experience, We Put In Years Of Work In
+              Building What Works Best For Your Schools
+            </p>
           </div>
         </div>
-        <img src={elipse} alt="" className="absolute bottom-0 right-0" />
+
+        <img
+          src={bottom}
+          alt=""
+          className="absolute top-1/2 -translate-y-1/2 -right-10"
+        />
+        <img src={butt} alt="" className="absolute bottom-0 right-0 w-20 " />
+        <img src={ccc} alt="" className="absolute bottom-0  left-0 w-1/2 " />
+        <div className="w-full h-1/3 absolute flex items-center  justify-center bottom-0">
+          <Link
+            to="/signup"
+            className="bg py-3 px-3 text-white font-medium w-1/3 text-center rounded-md "
+          >
+            Get Started
+          </Link>
+        </div>
       </div>{" "}
       <section
         id="About"
