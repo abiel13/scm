@@ -21,22 +21,22 @@ function Home() {
 
   return (
     <div id="home" className="overflow-x-hidden scr flex flex-col gap-14">
-      <div className="w-screen h-screen home relative  p-5  ">
+      <div className="w-screen h-screen home  p-5  ">
         <nav className="fixed top-0 left-0 right-0  black   z-50  px-4 py-3 shadow-md lg:px-2 lg:py-1 w-full flex justify-between  items-center">
           <img src={logo} alt="" />
           <Navbar />
         </nav>
 
-        <div className="w-full mt-9  flex items-center md:mt-24 lg:w-11/12 lg:absolute lg:left-0 lg:-translate-x-7 lg:mt-9  lg:h-4/5 ">
-          <div className="w-full relative h-3/4 flex  ">
+        <div className="w-full mt-9  flex items-center   h-full md:mt-24 lg:w-11/12 lg:absolute lg:left-0 lg:-translate-x-7 lg:mt-9  lg:h-4/5 ">
+          <div className="w-full items-center  h-full relative lg:h-3/4 flex  ">
             <img
               src={a}
               className="hidden lg:block z-40 right-0 absolute h-3/4  bottom-4"
               alt=""
             />
-          
-            <div className="text-white p-3  mt-8 z-40  py-7 flex items-center  w-full flex-col lg:px-14 lg:items-start  lg:w-1/2">
-              <p className="font-bold text-5xl text-center   w-full lg:text-5xl lg:text-left">
+
+            <div className="text-white p-3    mt-8 z-40 bg  py-7 flex items-center  w-full flex-col lg:px-14 lg:items-start  lg:w-1/2">
+              <p className="font-bold  text-5xl text-center   w-full lg:text-5xl lg:text-left">
                 School Management Program
               </p>
               <p className=" text-center font-medium w-full mt-8 md:w-4/5 lg:font-light lg:w-3/4 lg:text-left">
@@ -44,7 +44,10 @@ function Home() {
                 Management System For Best User Experience, We Put In Years Of
                 Work In Building What Works Best For Your Schools
               </p>
-              <Link to='/signup' className="bg-red-400 text-center shadow-md w-1/3 py-3 mt-6 rounded-md">
+              <Link
+                to="/signup"
+                className="bg-red-400 text-center shadow-md w-1/3 py-3 mt-6 rounded-md"
+              >
                 Get Started
               </Link>
             </div>
@@ -52,7 +55,8 @@ function Home() {
         </div>
         <img src={elipse} alt="" className="absolute bottom-0 right-0" />
       </div>{" "}
-      <section id="About"
+      <section
+        id="About"
         className="w-screen overflow-hidden mt-24 min-h-screen lg:h-screen"
       >
         <h1 className="text-black text-6xl text-center font-medium ">
@@ -89,7 +93,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section  className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 lg:h-screen">
+      <section className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 lg:h-screen">
         <div>
           <h3 className="my-8 text-center font-medium text-3xl text-blue-500">
             What Makes Us Different
@@ -150,7 +154,10 @@ function Home() {
           </div>
         </div>
       </section>
-      <section id="Feautures" className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 lg:h-screen">
+      <section
+        id="Feautures"
+        className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 lg:h-screen"
+      >
         <h3 className="text-center text-3xl text-blue-500 ">SMP Feautures</h3>
         <p className="mt-4 text-lg font-medium">
           Best Collaboration, Flexible and Intuitive
@@ -276,7 +283,10 @@ function Home() {
         </div>
       </section>
       <hr />
-      <section id='Testimonials' className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 lg:h-screen">
+      <section
+        id="Testimonials"
+        className="w-screen px-5 flex-col items-center flex overflow-hidden mt-24 lg:h-screen"
+      >
         <div className="w-11/2 h-full flex flex-col items-center  justify-between px-5 md:flex-row lg:flex-row">
           <img
             src={nerds}
