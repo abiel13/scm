@@ -39,14 +39,14 @@ function Home() {
               <p className="font-bold  text-5xl text-center   w-full lg:text-5xl lg:text-left">
                 School Management Program
               </p>
-              <p className=" text-center font-medium w-full mt-8 md:w-4/5 lg:font-light lg:w-3/4 lg:text-left">
+              <p className=" text-left font-medium w-full mt-8 md:w-4/5 md:text-2xl lg:font-light lg:w-3/4 lg:text-left">
                 Beautifully Designed and intellegently Developed School
                 Management System For Best User Experience, We Put In Years Of
                 Work In Building What Works Best For Your Schools
               </p>
               <Link
                 to="/signup"
-                className="bg-red-400 text-center shadow-md w-1/3 py-3 mt-6 rounded-md"
+                className="bg-red-400 text-center shadow-md w-1/2 md:w-1/2 md:text-2xl  md:font-medium py-4   mt-6 rounded-md"
               >
                 Get Started
               </Link>
