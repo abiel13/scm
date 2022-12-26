@@ -28,10 +28,11 @@ function Home() {
             <img src={logo} alt="" className="w-32 py-3 " />
             <Navbar />
           </div>
-          <div className="w-full h-full  absolute inset-0 flex flex-col items-start justify-center px-2 text-white">
+          
+          <div className="w-full  z-40 h-full  absolute inset-0 flex flex-col items-start justify-center px-2 text-white">
             <h1 className="text-3xl mt-5 font-medium w-11/12">
               School <span className="text-purple-500">Management</span> Program{" "}
-            </h1>
+            </h1>``
             <p className="text-sm w-3/4 leading-2 font-sans font-medium ">
               Beautifully Designed and intellegently Developed School Management
               System For Best User Experience, We Put In Years Of Work In

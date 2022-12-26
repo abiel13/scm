@@ -10,7 +10,7 @@ function Navbar() {
     <>
       <div>
         <img src={menu}
-          className="w-7 cursor-pointer lg:hidden"
+          className="w-7 cursor-pointer z-50 relative "
           onClick={() => {
             setActive((prev) => !prev);
           }}
