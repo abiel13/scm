@@ -59,8 +59,8 @@ const data = [
 export default function Chart() {
   return (
     <>
-    <div className="hidden  md:flex relative h-1/4 items-center  left-1/4">
- <LineChart  width={500} height={350} data={data}
+    <div className=" md:flex relative h-1/4 items-center  left-1/4">
+ <LineChart className='hidden md:flex' width={500} height={350} data={data}
     >
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
@@ -77,7 +77,7 @@ export default function Chart() {
     </LineChart>
   
     <PieChart width={500} height={500}>
-          <Pie data={data} dataKey="pv" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
+          <Pie data={data} dataKey="pv" cx="50%" cy="50%" outerRadius={60} fill="#8884d8"> </Pie>
           <Pie data={data} dataKey="uv" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
         </PieChart>
     </div> 
