@@ -2,10 +2,15 @@ import React from "react";
 import logo from "../images/SMP.svg";
 import { SignSchema } from "../Validations/SignVal";
 import { useFormik } from "formik";
+import {useNavigate} from 'react-router-dom'
+
 
 function Signup() {
+  const navigate = useNavigate()
+
   const onSubmit = () => {
     console.log("submitted");
+   navigate(`/school/${values.name} `)
   };
 
   const { handleChange, errors, handleBlur, handleSubmit, values, touched } =
@@ -24,8 +29,8 @@ function Signup() {
 
   return (
     <div className="w-screen h-screen flex items-center justify-center">
-      <div className="w-11/12 h-4/5 shadow-xl flex">
-        <div className="h-full w-full md:w-1/2 lg:w-1/2 py-2 px-3  flex relative flex-col items-center">
+      <div className="w-11/12  shadow-xl flex">
+        <div className="min-h-full  w-full md:w-1/2 lg:w-1/2 py-2 px-3  flex  flex-col items-center">
           <img
             src={logo}
             alt=""
@@ -33,7 +38,7 @@ function Signup() {
           />
           <form
             onSubmit={handleSubmit}
-            className="px-3 py-2 w-3/4 mt-6 h-5/6 relative md:absolute lg:absolute bottom-4 bg-white flex flex-col items-center"
+            className="px-3 py-2 w-3/4 mt-6 h-fit  bg-white flex flex-col items-center"
             action=""
           >
             <div className=" w-3/4 md:1/2 lg:w-1/2 leading-4 text-center">
@@ -110,12 +115,12 @@ function Signup() {
                 type="submit"
                 className="bg-blue-400 px-3 self-center py-2 w-1/2 rounded-md text-white font-medium mt-4"
               >
-                Login
+                Register
               </button>
             </div>
           </form>
         </div>
-        <div className="hidden md:w-1/2 md:flex lg:w-1/2 h-full signup flex-col lg:flex items-center justify-center ">
+        <div className="hidden m md:flex lg:w-1/2  signup flex-col lg:flex items-center justify-center ">
           <h3 className="text-white font-bold text-center text-4xl ">
             Create An Account With Us
           </h3>

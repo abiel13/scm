@@ -30,10 +30,10 @@ function Home() {
           </div>
           
           <div className="w-full  z-40 h-full  absolute inset-0 flex flex-col items-start justify-center px-2 text-white">
-            <h1 className="text-3xl mt-5 font-medium w-11/12">
+            <h1 className="text-3xl mt-5 font-medium w-11/12 md:text-6xl">
               School <span className="text-purple-500">Management</span> Program{" "}
-            </h1>``
-            <p className="text-sm w-3/4 leading-2 font-sans font-medium ">
+            </h1>
+            <p className="text-sm w-3/4 leading-2 font-sans font-medium md:text-2xl md:mt-4 ">
               Beautifully Designed and intellegently Developed School Management
               System For Best User Experience, We Put In Years Of Work In
               Building What Works Best For Your Schools
@@ -51,11 +51,11 @@ function Home() {
         <div className="w-full h-1/3 absolute flex items-center  justify-center bottom-0">
           <Link
             to="/signup"
-            className="bg py-3 px-3 text-white font-medium w-1/3 text-center rounded-md "
+            className="bg py-3 px-3 text-white font-medium w-1/3 text-center rounded-md md:text-2xl md:py5 "
           >
             Get Started
           </Link>
-        </div>
+        </div> 
       </div>{" "}
       <section
         id="About"

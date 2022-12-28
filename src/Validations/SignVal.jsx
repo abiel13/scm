@@ -8,7 +8,7 @@ export const SignSchema = yup.object().shape({
   password: yup
     .string()
     .min(5)
-    .matches(passwordRules, { message: "please enter a stronger password" })
+    // .matches(passwordRules, { message: "please enter a stronger password" })
     .required("required"),
   cpassword: yup
     .string()
