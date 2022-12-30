@@ -8,6 +8,8 @@ import {
   FaChevronLeft,FaChalkboardTeacher
 } from "react-icons/fa";
 import { BiHelpCircle, BiConversation } from "react-icons/bi";
+import { NavLink } from "react-router-dom";
+
 
 function SideBar(props) {
   const [visible, setVisible] = useState(false);
@@ -27,35 +29,35 @@ function SideBar(props) {
         {props.name[0]} schools{" "}
       </div>
       <ul className="md:px-5 w-full flex flex-col  items-start  lg:items-start lg:px-2 gap-10 mt-8">
-        <li className="flex w-full  items-center gap-4 lg:gap-2">
+        <NavLink to='/studentRegistration' className="flex w-full  items-center gap-4 lg:gap-2">
           <FaSchool className="text-white text-2xl " />
 <div className={` ${visible?'block' : 'hidden'} transition-all lg:block text-white font-medium text-lg lg:text-base`} >Student Registration</div>
-        </li>
-        <li className="flex items-center gap-4">
+        </NavLink>
+        <NavLink className="flex items-center gap-4">
           <FaLandmark className="text-white text-2xl" />
 <div className={` ${visible?'block' : 'hidden'} text-white lg:block font-medium text-lg lg:text-base`} >Administration</div>
-        </li>
-        <li className="flex items-center gap-4">
+        </NavLink>
+        <NavLink className="flex items-center gap-4">
           <FaProcedures className="text-white text-2xl md:text-4xl" />
           <div className={` ${visible?'block ' : 'hidden'} text-white lg:block font-medium lg:text-base text-lg`} >Finance Management</div>
-        </li>
-        <li className="flex items-center gap-4">
+        </NavLink>
+        <NavLink className="flex items-center gap-4">
           <FaChalkboardTeacher className="text-white text-2xl md:text-4xl " />
 <div className={` ${visible?'block' : 'hidden'} text-white lg:block lg:text-base font-medium text-lg`} > Teachers</div>
 
-        </li>
+        </NavLink>
       </ul>
       <ul className="w-full px-5 flex flex-col lg:px-2  items-start  lg:items-start gap-10 mt-8">
-      <li className="flex items-center gap-4">
+      <NavLink className="flex items-center gap-4">
           <BiHelpCircle className="text-white text-2xl md:text-4xl" />
           <div className={` ${visible?'block' : 'hidden'} text-white lg:block lg:text-base font-medium text-lg`} >Help and Support</div>
 
-        </li>
-        <li className="flex items-center gap-4">
+        </NavLink>
+        <NavLink className="flex items-center gap-4">
           <BiConversation className="text-white text-2xl md:4xl" />{" "}
           <div className={` ${visible?'block' : 'hidden'} text-white lg:block lg:text-base font-medium text-lg`} >Contact Us</div>
 
-        </li>
+        </NavLink>
       </ul>
     </div>
   );

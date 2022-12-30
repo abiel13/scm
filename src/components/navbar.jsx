@@ -51,7 +51,7 @@ function Navbar() {
         <li>
           <Link smooth={true} onClick={() => {
             setActive((prev) => !prev);
-          }} to="Testimonials" className="cursor-pointer lg:text-white text-2xl font-medium">
+          }} to="Testimonials" className="cursor-pointer lg:text-white md:text-2xl font-medium">
           Testimonials 
           </Link>
         </li>
