@@ -1,8 +1,7 @@
 import React from 'react'
-import { BrowserRouter, useParams } from 'react-router-dom'
+import {  Outlet, useParams } from 'react-router-dom'
+import SideBar from '../../components/SideBar';
 
-import SideBar from '../components/SideBar';
-import SchoolPages from './schoolPages';
 
 function SchoolDashBoard() {
 let params = useParams();
@@ -11,8 +10,10 @@ let params = useParams();
     return (
   <div className='w-screen min-h-screen flex overflow-x-hidden '>
 <SideBar name={params.name} />
-<SchoolPages
- />
+<div className='fixed right-0 px-3 py-2 bg-slate-700 w-4/5 min-h-full'>
+  <Outlet/>
+</div>
+
   </div>
     
   )

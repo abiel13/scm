@@ -34,3 +34,11 @@ body::-webkit-scrollbar-thumb{
 .t{
     top: 20%;
 }
+
+.active{
+  background: #141313de ;
+  padding-top: 3px ;
+  padding-bottom: 3px;
+  border-radius: .4rem;
+
+}
