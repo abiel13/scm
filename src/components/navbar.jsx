@@ -10,7 +10,7 @@ function Navbar() {
     <>
       <div>
         <img src={menu}
-          className="w-7 cursor-pointer z-50 relative  md:w-10"
+          className="w-7 cursor-pointer z-50 relative  md:w-10 lg:hidden"
           onClick={() => {
             setActive((prev) => !prev);
           }}
@@ -28,14 +28,14 @@ function Navbar() {
           X
         </div>
         <li className="navlist">
-          <Link to="home" duration={1000} onClick={() => {
+          <Link to="home" duration={1000} onClick={() => { 
             setActive((prev) => !prev);
-          }} smooth={true} className="  cursor-pointer lg:text-white font-medium md:text-2xl">Home</Link>
+          }} smooth={true} className="  cursor-pointer lg:text-white lg:text-lg font-medium md:text-2xl">Home</Link>
         </li>
         <li className="navlist">
           <Link smooth={true} onClick={() => {
             setActive((prev) => !prev);
-          }} to="About" className="cursor-pointer lg:text-white  md:text-2xl font-medium">
+          }} to="About" className="cursor-pointer lg:text-white lg:text-lg  md:text-2xl font-medium">
             About
           </Link>
         </li>{" "}
@@ -44,14 +44,14 @@ function Navbar() {
         <li>
           <Link smooth={true} onClick={() => {
             setActive((prev) => !prev);
-          }}  to="Feautures" className="cursor-pointer lg:text-white md:text-2xl font-medium">
+          }}  to="Feautures" className="cursor-pointer lg:text-white md:text-2xl lg:text-lg font-medium">
           Feautures 
           </Link>
         </li>
         <li>
           <Link smooth={true} onClick={() => {
             setActive((prev) => !prev);
-          }} to="Testimonials" className="cursor-pointer lg:text-white md:text-2xl font-medium">
+          }} to="Testimonials" className="cursor-pointer lg:text-white lg:text-lg md:text-2xl font-medium">
           Testimonials 
           </Link>
         </li>

@@ -32,7 +32,9 @@ function SideBar(props) {
       <div className="text-purple-500 font-bold text-center">
         <p className={`hidden lg:block`} >{props.name} <br /> schools</p>
         <p className={`block lg:hidden`} >{props.name[0]} schools{" "}</p>
-        
+       <div className={``}>
+        <img src="" alt="" />
+        </div> 
       </div>
       <ul className="md:px-5 w-full flex flex-col  items-start  lg:items-start lg:px-2 gap-10 mt-8">
         <NavLink
@@ -51,7 +53,7 @@ function SideBar(props) {
         </NavLink>
         <NavLink
           to={`/school/${props.name}/Administration`}
-          className={`${visible?'':'w-full justify-center'} flex items-center gap-4`}
+          className={`${visible?'':'w-full justify-center'} flex w-full items-center gap-4`}
         >
           <FaLandmark className="text-white text-2xl" />
           <div

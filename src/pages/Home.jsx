@@ -21,22 +21,24 @@ function Home() {
 
   return (
     <div id="home" className="overflow-x-hidden scr flex flex-col gap-14">
-      <div className="w-screen h-screen  relative    ">
-        <div className="w-full h-2/4 bg relative px-4">
-          <div className="flex items-center w-full  justify-between">
+      <div className="w-screen  h-screen  relative    ">
+        <div className="w-full  h-2/4 bg relative px-4 lg:h-3/4">
+          <div className="flex  items-center w-full  justify-between lg:fixed lg:px-6  bg top-0 left-0 right-0 z-50">
             {" "}
-            <img src={logo} alt="" className="w-32 py-3 " />
+            <img src={logo} alt="" className="w-32 py-3 lg:w-24 " />
             <Navbar />
           </div>
-          
-          <div className="w-full  z-40 h-full  absolute inset-0 flex flex-col items-start justify-center px-2 text-white">
-            <h1 className="text-3xl mt-5 font-medium w-11/12 md:text-6xl">
+
+          <div className="w-full   z-40 h-full  absolute inset-0 lg:px-5 flex flex-col items-start justify-center px-2 text-white">
+            <h1 className="text-3xl mt-5 font-medium w-11/12 md:text-6xl lg:w-1/2 lg:text-5xl">
               School <span className="text-purple-500">Management</span> Program{" "}
             </h1>
-            <p className="text-sm w-3/4 leading-2 font-sans font-medium md:text-2xl md:mt-4 ">
+            <p className="text-sm w-3/4 leading-2 font-sans font-medium md:text-2xl md:mt-4 lg:w-1/3 lg:text-base ">
               Beautifully Designed and intellegently Developed School Management
               System For Best User Experience, We Put In Years Of Work In
               Building What Works Best For Your Schools
+
+              <Link className="hidden lg:block mt-3 px-3 py-2 bg-purple-600 text-center w-1/3 rounded-md text-base">Get Started</Link>
             </p>
           </div>
         </div>
@@ -44,18 +46,18 @@ function Home() {
         <img
           src={bottom}
           alt=""
-          className="absolute top-1/2 -translate-y-1/2 -right-10"
+          className="absolute top-1/2 -translate-y-1/2 lg:w-1/3 -right-10"
         />
         <img src={butt} alt="" className="absolute bottom-0 right-0 w-20 " />
-        <img src={ccc} alt="" className="absolute bottom-0  left-0 w-1/2 " />
+        <img src={ccc} alt="" className="absolute bottom-0  left-0 w-1/2 lg:w-1/4 " />
         <div className="w-full h-1/3 absolute flex items-center  justify-center bottom-0">
           <Link
             to="/signup"
-            className="bg py-3 px-3 text-white font-medium w-1/3 text-center rounded-md md:text-2xl md:py5 "
+            className="bg py-3 px-3 text-white font-medium w-1/3 lg:hidden text-center rounded-md md:text-2xl md:py5 "
           >
             Get Started
           </Link>
-        </div> 
+        </div>
       </div>{" "}
       <section
         id="About"
