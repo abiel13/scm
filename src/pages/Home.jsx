@@ -37,8 +37,9 @@ function Home() {
               Beautifully Designed and intellegently Developed School Management
               System For Best User Experience, We Put In Years Of Work In
               Building What Works Best For Your Schools
-
-              <Link className="hidden lg:block mt-3 px-3 py-2 bg-purple-600 text-center w-1/3 rounded-md text-base">Get Started</Link>
+              <Link className="hidden lg:block mt-3 px-3 py-2 bg-purple-600 text-center w-1/3 rounded-md text-base">
+                Get Started
+              </Link>
             </p>
           </div>
         </div>
@@ -49,7 +50,11 @@ function Home() {
           className="absolute top-1/2 -translate-y-1/2 lg:w-1/3 -right-10"
         />
         <img src={butt} alt="" className="absolute bottom-0 right-0 w-20 " />
-        <img src={ccc} alt="" className="absolute bottom-0  left-0 w-1/2 lg:w-1/4 " />
+        <img
+          src={ccc}
+          alt=""
+          className="absolute bottom-0  left-0 w-1/2 lg:w-1/4 "
+        />
         <div className="w-full h-1/3 absolute flex items-center  justify-center bottom-0">
           <Link
             to="/signup"
